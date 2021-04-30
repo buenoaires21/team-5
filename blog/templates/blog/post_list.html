@@ -1,9 +1,11 @@
+ {% load static %}
 <!doctype html>
 <html lang="en">
   <head>
+   
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">  
-    <link href="static/css/blog.css" rel="stylesheet" type="text/css">
+    <link href="{% static 'css/blog.css' %}" rel="stylesheet" type="text/css">
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,15 +14,15 @@
     <link rel="stylesheet" href="blog.css">
   </head>
   <body>
-    <div class = "navbar">
-        <img src="./imagenes/imagen1.png" alt="" class="img-header">
+    <head>
+        <img src="{% static 'imagenes/imagen1.png' %}" alt="fondo">
         <nav>
             <a href="#">Habilidades Blandas</a>
             <a href="#">Habilidades Técnicas</a>
             <a href="#">Currículum</a>
             <a href="#">Quienes somos</a>
         </nav>
-        </div> 
+    </head> 
 
   <header>
   <div class="curved-div upper">
