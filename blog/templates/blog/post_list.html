@@ -14,16 +14,21 @@
     <link rel="stylesheet" href="blog.css">
   </head>
   <body>
+    {% block content %}
+    
     <head>
         <img src="{% static 'imagenes/imagen1.png' %}" alt="fondo">
         <nav>
-            <a href="#">Habilidades Blandas</a>
+        
+            <h2><a href="{% url 'post_detail' %}"> Habilidades Blandas </a></h2>
+        
             <a href="#">Habilidades Técnicas</a>
             <a href="#">Currículum</a>
             <a href="#">Quienes somos</a>
         </nav>
     </head> 
-
+    
+    {% endblock %}
   <header>
   <div class="curved-div upper">
   </div>
@@ -38,6 +43,6 @@
   </div>
   </header>
 
-
+  
   </body>
 </html>
